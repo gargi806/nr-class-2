@@ -1,0 +1,59 @@
+1. what is npm?
+ it is the worlds largest software registry which can be used to share and borrow packages of code.
+
+2. what is parcel/webpack? Why do weed it?
+ Parcel and webpack are the bundlers used mostly for JavaScript or Typescript code that helps you to minify, clean, and make your code compact so that it becomes easier to send a request or receive the response from the server when it usually takes you to transfer multiple files without using any bundler
+
+3. What is parcel-cache?
+it stores info about your project when parcel builds it so that it doesnot have to re-parse or re-analyse when it rebuilds it, it is the reson why it is fast in development time. we should add cache in our gitignore because 
+
+
+5. Difference between dependencies and dev-dependencies?
+Dev-dependencies consisits of all the packages needed in the project in its development phase not in the production or testing environment.
+dependencies on the other hand comprises of al  tu package sthat are needed throughout with its version.
+
+6. what is npx?
+it is node package execute. it executes any package from node registry that u want to  use without downloading it.
+
+7. what is tree shaking?
+practice of removing unused/dead code from the production unit.
+
+8. what is hot module replacement?
+automatically updates modules during runtime wthout needing refreshing page.
+
+9. what is gitignore? what should we add and not add into it?
+contains the list of files that you dont want to update on git.it is a text file.The types of files you should consider adding to a .gitignore file are any files that do not need to get committed. You may not want to commit them for security reasons or because they are local to you and therefore unnecessary for other developers working on the same project as you.
+
+10. difference between package.json and package.lock.json?
+package.lock.json is created for locking the dependency with the installed version. It will install the exact latest version of that package in your application and save it in package.json.
+package.json contains metadata of the project along with the version.
+
+11. why should you  not modify package.lock.json?
+it is a gnerated file ,not meant to be manually edited. it contaions the dependencies tree and the versions . if we try to modify then it wont be able to keep track of the updated versions which will lead to our project working on some environments only.
+
+12. what is node modules?should we push it on git?
+
+13. what is the dist folder?
+contains the minimized version of the source code. 
+
+14. what is browserlists?
+allows specifying which browsers should be supported in your frontend app .
+
+
+
+
+* what is  a dependency?
+ A dependency is a third-party bit of software that was probably written by someone else and ideally solves a single problem for you.
+ A project dependency can be an entire JavaScript library or framework — such as React or Vue — or a very small utility like our human-readable date library, or it can be a command line tool such as Prettier .
+ we can use these dependencies which are reffered to as packages using the script tag however it doenot work smoothly all the time . 
+ what if we need to change the packages or a different of a dependency is released .in these situations it becomes useful to use package managers such as npm which ensures that your code is added and removed cleanly.
+
+* What is a bundle?
+ A bundle is used to refer to a single file which contains all the js for your project.typically compressed as nuch as possible to reduce the time of your software download so that it becomes accessable on your visitors browser quickly.
+Bundler is a collection of all your files needed for a project like style ,images,font,js etc ,it assesmbles them ain a seemless way so that it works well on production.
+
+
+* hash and linked list?
+
+* code-splitting
+ most react apps will have their code bundled into a single file. as the app grows so does the bundle, which can cause great loading time.Code-splitting your app can help you “lazy-load” just the things that are currently needed by the user, which can dramatically improve the performance of your app. While you haven’t reduced the overall amount of code in your app, you’ve avoided loading code that the user may never need, and reduced the amount of code needed during the initial load.
